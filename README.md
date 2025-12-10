@@ -52,9 +52,10 @@
 
 <div align="center">
 
-| 메인 페이지 | 모달 페이지 | 멤버쉽 페이지 |
+
+| 메인 페이지 | 게시글 상세 페이지 | 게시글 작성 페이지 |
 |:---:|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/e66707df-3e81-4b47-bd2c-a92c54052eca" width="250" alt="메인"> | <img src="https://github.com/user-attachments/assets/5c06bdd9-1110-42b8-a838-4d6021b60b1e" width="250" alt="모달"> | <img src="https://github.com/user-attachments/assets/605b697e-a6e2-41ac-abd8-daa02e919a2b" width="250" alt="멤버쉽"> |
+| <img src="https://github.com/user-attachments/assets/e66707df-3e81-4b47-bd2c-a92c54052eca" width="250" alt="메인"> | <img src="https://github.com/user-attachments/assets/928ec6b6-20ec-47e3-b60f-bf9d9059ccbb" width="250" alt="게시글 상세"> | <img src="https://github.com/user-attachments/assets/0669576e-e822-4e14-a37c-aeeecec9e818" width="250" alt="게시글 작성"> |
 
 | 로그인 페이지 | 회원가입 페이지 | 마이 페이지 |
 |:---:|:---:|:---:|
