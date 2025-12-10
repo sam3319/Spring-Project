@@ -57,13 +57,9 @@
 |:---:|:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/e66707df-3e81-4b47-bd2c-a92c54052eca" width="250" alt="메인"> | <img src="https://github.com/user-attachments/assets/928ec6b6-20ec-47e3-b60f-bf9d9059ccbb" width="250" alt="게시글 상세"> | <img src="https://github.com/user-attachments/assets/0669576e-e822-4e14-a37c-aeeecec9e818" width="250" alt="게시글 작성"> |
 
-| 로그인 페이지 | 회원가입 페이지 | 마이 페이지 |
-|:---:|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/488b674a-eb96-47c2-8904-1a2e4f48cae5" width="250" alt="로그인"> | <img src="https://github.com/user-attachments/assets/172dc647-9518-4497-a22c-91bd6cbfec82" width="250" alt="회원가입"> | <img src="https://github.com/user-attachments/assets/81d4e415-1d61-40b9-bfa7-18083e4cd2f2" width="250" alt="마이홈"> |
-
-| 검색 페이지 | 자유 게시판 | 리뷰 게시판 |
-|:---:|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/64edab46-7a68-4f4a-81ff-d53978e0f7ef" width="250" alt="검색"> | <img src="https://github.com/user-attachments/assets/2b376922-9c49-48d2-b6d2-29ce617618cb" width="250" alt="자유"> | <img src="https://github.com/user-attachments/assets/645f7993-9906-474c-93a6-a83a81b81c28" width="250" alt="리뷰"> |
+| 게시글 수정 페이지 | 마이 페이지 | 
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/b06600f4-a986-44b7-86bb-e4d8394b81c7" width="250" alt="게시글 수정"> | <img src="https://github.com/user-attachments/assets/a20bad41-ba50-4af0-85c6-8fa1df830b16" width="250" alt="마이"> |
 
 </div>
 
