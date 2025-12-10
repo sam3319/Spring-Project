@@ -17,7 +17,8 @@
 <br>
 
 ## <span id="1"> 1. 프로젝트 소개</span>
-- OTT 시청 및 미디어 콘텐츠 정보 공유 웹 어플리케이션
+- 개인 SNS 사이트
+- 사용자의 일상, 여행, 추억 등 웹을 통해 기록하고 보존할 수 있는 웹 사이트
 <br>
 
 ## <span id="2"> 3. 기술 스택</span>
@@ -53,7 +54,7 @@
 
 | 메인 페이지 | 모달 페이지 | 멤버쉽 페이지 |
 |:---:|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/317f5b25-4a0f-4ed8-b41f-86089287fc25" width="250" alt="메인"> | <img src="https://github.com/user-attachments/assets/5c06bdd9-1110-42b8-a838-4d6021b60b1e" width="250" alt="모달"> | <img src="https://github.com/user-attachments/assets/605b697e-a6e2-41ac-abd8-daa02e919a2b" width="250" alt="멤버쉽"> |
+| <img src="https://github.com/user-attachments/assets/e66707df-3e81-4b47-bd2c-a92c54052eca" width="250" alt="메인"> | <img src="https://github.com/user-attachments/assets/5c06bdd9-1110-42b8-a838-4d6021b60b1e" width="250" alt="모달"> | <img src="https://github.com/user-attachments/assets/605b697e-a6e2-41ac-abd8-daa02e919a2b" width="250" alt="멤버쉽"> |
 
 | 로그인 페이지 | 회원가입 페이지 | 마이 페이지 |
 |:---:|:---:|:---:|
