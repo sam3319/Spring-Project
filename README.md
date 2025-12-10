@@ -1,8 +1,8 @@
 <div id="top"></div>
 
 <div align='center'>
-<h1><b>JSP_Ditflix</b></h1>
-<img src="https://img.shields.io/badge/프로젝트 기간-2025.04.03~2025.06.23-blue?style=flat&logo=&logoColor=white" />
+<h1><b>DDongstagram</b></h1>
+<img src="https://img.shields.io/badge/프로젝트 기간-2025.12.02~2025.12.12-blue?style=flat&logo=&logoColor=white" />
 </div>
 
 <br>
