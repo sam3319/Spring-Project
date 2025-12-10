@@ -33,7 +33,7 @@
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![spring](https://img.shields.io/badge/spring-%23F8DC75.svg?style=for-the-badge&logo=spring&logoColor=black)
+![spring](https://img.shields.io/badge/spring-%6DB33F.svg?style=for-the-badge&logo=spring&logoColor=black)
 
 
 
