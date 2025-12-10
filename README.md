@@ -85,7 +85,7 @@
 <br>
 
 ## <span id="7"> 7. ERD</span>
-![ERD](https://github.com/user-attachments/assets/42ccc76a-1ee3-4bc2-a0e2-f153672d8fcf](https://github.com/user-attachments/assets/2ac60e07-3a82-48c5-a301-a1e74e0a98c9)
+![ERD](https://github.com/user-attachments/assets/2ac60e07-3a82-48c5-a301-a1e74e0a98c9)
 
 
 
