@@ -1,0 +1,115 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    font-family: NanumSquare;
+}
+
+main{
+    margin-top: 30px;
+    width: 600px;
+    height: 820px;
+    border: 1px solid rgb(198, 196, 196);
+}
+
+header{
+    padding: 11px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+form{
+    padding: 3px 20px;
+}
+
+span{
+    margin-right: 20px;
+}
+
+section{
+    display: flex;
+    margin: 20px;
+}
+
+#title{
+    width: 90%;
+}
+
+#content{
+    width: 90%;
+    height: 400px;
+}
+
+#file{
+    display: none;
+}
+
+.file-container{
+    border: 1px dotted black;
+    width: 90%;
+    height: 100px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    transition: all 0.5s;
+}
+
+.file-container:hover{
+    border: 1px solid black;
+    color: black;
+    transform: translateY(-5px);
+}
+
+#form-btn{
+    display: flex;
+    justify-content: end;
+}
+
+#form-btn > input{
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid rgb(198, 196, 196);
+    padding: 2px 15px;
+    color: gray;
+    transition: all 0.5s;
+}
+
+#form-btn > input:hover{
+    transform: translateY(-5px);
+    border: 1px solid black;
+    color: black;
+}
+
+nav{
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 63px; 
+    background-color: rgb(243, 243, 243);
+}
+
+i{
+    cursor: pointer;
+    font-size: 25px;
+    transition-property: transform, color;
+    transition-duration: 0.5s;
+    color: gray;
+}
+
+i:hover{
+    transform: translateY(-5px);
+    color: black;
+}
+
+i:nth-child(2){
+    color: black;
+    cursor: auto;
+}

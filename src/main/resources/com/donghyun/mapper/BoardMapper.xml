@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- 
+ * Description : BoardMapper<br>
+ * Date : 2025. 12. 7.<br>
+ * History :<br>
+ * - 작성자 : 이동현, 날짜 : 2025. 12. 7.<br>
+ *
+ * @author 이동현
+ * @version 1.0
+ -->  
+  
+ <mapper namespace="com.donghyun.mapper.BoardMapper">
+ 
+	<!-- 전체 게시글 가져오기 -->
+ 	<select id="getAllBoard" resultMap="getBoardList">
+ 		select
+ 			b.bno,
+ 			b.usersId,
+ 			b.title,
+ 			b.createAt,
+ 			b.updateAt,
+ 			u.nickName,
+ 			u.userImage,
+ 			(select count(*) from reply where bno = b.bno) as replyCount
+ 		from Board b
+ 		INNER JOIN Users u ON b.usersId = u.usersId
+ 		ORDER BY createAt DESC
+ 	</select>
+ 	
+	<!-- 무한 스크롤 구현을 위한 LIMIT을 포함한 쿼리 -->
+	<select id="getAllBoardPaging" resultMap="getBoardList">
+		select
+ 			b.bno,
+ 			b.usersId,
+ 			b.title,
+ 			b.content,
+ 			b.createAt,
+ 			b.updateAt,
+ 			u.nickName,
+ 			u.userImage,
+ 			(select count(*) from reply where bno = b.bno) as replyCount
+ 		from Board b
+ 		INNER JOIN Users u ON b.usersId = u.usersId
+ 		ORDER BY createAt DESC
+		LIMIT #{offset}, #{size}
+	</select>
+	
+ 	<!-- JOIN 하여 가져온 데이터를 MAP, LIST 형태로 받기 위한 쿼리 -->
+	<resultMap type="com.donghyun.domain.BoardVO" id="getBoardList">
+		<id property="bno" column="bno"/>
+		<result property="usersId" column="usersId"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content"/>
+		<result property="updateAt" column="updateAt"/>
+		<result property="nickName" column="nickName"/>
+		<result property="userImage" column="userImage"/>
+		<result property="replyCount" column="replyCount"/>
+		
+		<collection property="images" ofType="String"
+					select="getBoardImages" column="bno"/>
+	</resultMap> 
+	 	
+  	<!-- 상세 게시글 정보 가져오기 -->
+  	<select id="getBoard" resultMap="BoardDetailMap">
+  		select 
+  			b.bno,
+  			b.usersId,
+  			b.title,
+  			b.content,
+  			b.createAt,
+  			b.updateAt,
+  			u.nickName,
+  			u.userImage,
+  			(select count(*) from reply where bno = #{bno}) as replyCount
+  		from Board b
+  		INNER JOIN Users u ON b.usersId = u.usersId
+  		where bno = #{bno}
+  	</select>
+  	
+  	<!-- 상세 게시글 이미지, 댓글 정보 -->
+  	<resultMap type="com.donghyun.domain.BoardVO" id="BoardDetailMap">
+  		<id property="bno" column="bno"/>
+  		<result property="usersId" column="usersId"/>
+  		<result property="title" column="title"/>
+  		<result property="content" column="content"/>
+  		<result property="createAt" column="createAt"/>
+  		<result property="updateAt" column="updateAt"/>
+  		<result property="nickName" column="nickName"/>
+  		<result property="userImage" column="userImage"/>
+  		
+  		<collection property="images" ofType="String" select="getBoardImages" column="bno"/>
+  	</resultMap>
+  	
+  	<!-- 이미지 정보 가져오기 -->
+  	<select id="getBoardImages" resultType="String">
+  		select fileName from BoardImage where bno = #{bno} ORDER BY imageId
+  	</select>
+  	
+  	<!-- Profile 페이지에서 사용할 이미지 썸네일 가져오기 -->
+	<select id="getUserPostThumbnails" resultType="map">
+	    select 
+	        b.bno,
+	        b.usersId,
+	        b.title,
+	        
+	        (SELECT fileName 
+	         FROM BoardImage bi 
+	         WHERE bi.bno = b.bno 
+	         ORDER BY bi.imageId
+	         LIMIT 1) AS thumbnail
+	    from Board b
+	    where b.usersId = #{usersId}
+	    ORDER BY b.createAt DESC
+	</select>
+  	
+  	<!-- 총 게시글 수 가져오기 -->
+  	<select id="getUserPostCount" resultType="int">
+	    select COUNT(*) 
+	    from Board 
+	    where usersId = #{usersId}
+	</select>
+  	
+  	<!-- 게시글 작성 -->
+  	<insert id="insertBoard" useGeneratedKeys="true" keyProperty="bno">
+  		insert into board(usersId, title, content, createAt) values(#{usersId}, #{title}, #{content}, NOW())
+  	</insert>
+  	
+  	<!-- 이미지 작성(여러개 저장) -->
+  	<insert id="insertBoardImages">
+  		insert into boardImage(bno, fileName) values
+  		<foreach collection="images" item="image" separator=",">
+  			(#{bno}, #{image})
+  		</foreach>
+  	</insert>
+  	
+  	<!-- 게시글 수정 -->
+  	<update id="modifyBoard">
+  		update board set title = #{title}, content = #{content}, updateAt = NOW() where bno = #{bno}
+  	</update>
+  	
+  	<!-- 게시글 삭제 -->
+  	<delete id="removeBoard">
+  		delete from board where bno = #{bno}
+  	</delete>
+ </mapper>

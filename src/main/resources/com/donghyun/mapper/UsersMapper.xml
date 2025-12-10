@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 
+ * Description : UsersMapper<br>
+ * Date : 2025. 12. 6.<br>
+ * History :<br>
+ * - 작성자 : 이동현, 날짜 : 2025. 12. 6.<br>
+ *
+ * @author 이동현
+ * @version 1.0
+ -->  
+
+<mapper namespace="com.donghyun.mapper.UsersMapper">
+	<select id="getUsers" resultType="com.donghyun.domain.UsersVO">
+		select * from users where UsersId = #{usersId}
+	</select>
+</mapper>
