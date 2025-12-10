@@ -10,11 +10,9 @@
 ## 0. 목차
 
 1.  [프로젝트 소개](#1)
-2.  [팀원 소개](#2)
-3.  [기술스택](#3)
-4.  [화면구성](#4)
-7.  [ERD](#7)
-8.  [Architecture](#8)
+2.  [기술스택](#2)
+3.  [화면구성](#3)
+4.  [ERD](#4)
 
 <br>
 
@@ -22,19 +20,7 @@
 - OTT 시청 및 미디어 콘텐츠 정보 공유 웹 어플리케이션
 <br>
 
-## <span id="2"> 2. 팀원 소개</span>
-
-<div align="center">
-
-| 팀장 | 팀원 |
-| :---: | :---: |
-| <img src="https://github.com/sam3319.png" width="120px"/>| <img src="https://github.com/jihun5914.png" width="120px"/> |
-| [이동현](https://github.com/sam3319) | [김지훈](https://github.com/jihun5914) |
-
-</div>
-<br>
-
-## <span id="3"> 3. 기술 스택</span>
+## <span id="2"> 3. 기술 스택</span>
 
 ### Environment
 
@@ -61,7 +47,7 @@
 
 <br>
 
-## <span id="4">4. 화면설계</span>
+## <span id="3">3. 화면설계</span>
 
 <div align="center">
 
@@ -79,12 +65,9 @@
 
 </div>
 
-## <span id="6"> 6. 사이트맵</span>
-![사이트맵](https://github.com/user-attachments/assets/bccdf7b5-4e31-4680-a755-998cf7f5cb10)
-
 <br>
 
-## <span id="7"> 7. ERD</span>
+## <span id="4"> 4. ERD</span>
 ![ERD](https://github.com/user-attachments/assets/2ac60e07-3a82-48c5-a301-a1e74e0a98c9)
 
 
